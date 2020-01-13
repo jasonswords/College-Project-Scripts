@@ -1,0 +1,135 @@
+Google:
+The Google search engine is a security auditor's best friend, especially when it comes to information 
+gathering. 
+•
+Exploit Database:
+The Google Hacking Database (GHDB) as part of the exploit database has a huge collection 
+of google hacks to help you find useful information about targets.
+•
+Shodan:
+Use Shodan to discover which of your devices are connected to the Internet, where they are located 
+and who is using them.
+•
+Theharvester:
+Email harvesting is an effective way of finding emails, and possibly usernames. 
+•
+Wayback Machine:
+Find old cached versions of a targets website without ever visiting their site. 
+•
+Search Engine Caches:
+Different search engines often contain cached version of target sites.
+•
+Netcraft:
+Can be used to indirectly find out information about web servers on the Internet, including the 
+underlying operating system, web server version, and uptime graphs. 
+•
+Whois:
+Databases contain name server, registrar, and, in some cases, full contact information about a 
+domain name. 
+•
+Recon
+-
+ng:
+Provides a powerful environment in which open source web
+-
+based reconnaissance can be 
+conducted quickly and thoroughly.
+•
+Reverse
+-
+IP lookup:
+Can be used to see any other domains that use the same sever as out target.
+•
+Professional Penetration Testing
+Digital Forensics & Cyber Security
+Dublin Technical University
+As a pentester you need to develop your own personal arsenal of weapons that you use when performing your 
+own pentests. Researching and evaluating new tools is a consistent requirement to ensure you are up to date with 
+the best tools and techniques. 
+In this section I'll highlight a few of the many tools and resources available for passive reconnaissance. Kali Linux 
+has entire sections of pre
+-
+installed tools for each stage of a pentest but you should always play with each tool to 
+find your favourites.
+A large number of the tools in this section are web based or require an active internet connection. I highly 
+recommend you use the Firefox browser because of the number of useful add
+-
+ons and also create a folder of 
+bookmarks containing links to all your favourite online recon/ information gather tools. 
+I also recommend creating your own checklist of information that you should try and find during this stage, this 
+evolving checklist should guide your activities during this stage.
+Some tools/resources in this section:
+Google:
+The Google search engine is a security auditor's best friend, especially when it comes to information 
+gathering. 
+•
+Exploit Database:
+The Google Hacking Database (GHDB) as part of the exploit database has a huge collection 
+of google hacks to help you find useful information about targets.
+•
+Shodan:
+Use Shodan to discover which of your devices are connected to the Internet, where they are located 
+and who is using them.
+•
+Theharvester:
+Email harvesting is an effective way of finding emails, and possibly usernames. 
+•
+Wayback Machine:
+Find old cached versions of a targets website without ever visiting their site. 
+•
+Search Engine Caches:
+Different search engines often contain cached version of target sites.
+•
+Netcraft:
+Can be used to indirectly find out information about web servers on the Internet, including the 
+underlying operating system, web server version, and uptime graphs. 
+•
+Whois:
+Databases contain name server, registrar, and, in some cases, full contact information about a 
+domain name. 
+•
+Recon
+-
+ng:
+Provides a powerful environment in which open source web
+-
+based reconnaissance can be 
+conducted quickly and thoroughly.
+•
+Reverse
+-
+IP lookup:
+Can be used to see any other domains that use the same sever as out target.
+•
+Document metadata analysis:
+Another useful source of information often comes the metadata section of 
+popular file formats.
+•
+Tineye:
+Reverse image searches allow us look for profile pictures etc. used on other sites.
+•
+Social media profilers:
+Allow us find interests, links, friends etc of employees/users at our target
+
+DNS Enumeration
+: DNS is often a lucrative source for active information gathering. 
+•
+DNS Zone Transfers :
+The zone file contains a list of all the DNS names configured for that zone.
+•
+DNSrecon and DNSenum:
+two useful DNS tools built into kali.
+•
+Dig / Host / NSLookup:
+Core network query commands
+•
+Fierce:
+DNS brute forcing tool
+•
+Maltego:
+Comprehensive query and link building tool
+•
+Social Engineering:
+powerful technique that be utilised at all stages of the pen test to gain info and access. 
+
+

