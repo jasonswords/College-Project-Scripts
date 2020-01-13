@@ -55,7 +55,7 @@ elif [[ "$1" == "2" ]]; then
 
 # Fix mhn server hpfeeds issue
 elif [[ "$1" == "3" ]]; then
-	echo " ****** Fixong MHN server *****"
+	echo " ****** Fixing MHN server *****"
 	echo " "
 	echo " ****** Restarting Mongodb ******"
 	ssh root@"${IP_HONEYPOTS[3]}" "service mongodb start"
